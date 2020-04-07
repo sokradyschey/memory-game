@@ -4,6 +4,10 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
+// declaring move variable
+let moves = 0;
+let counter = document.querySelector(".moves");
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
